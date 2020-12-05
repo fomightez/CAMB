@@ -1,7 +1,8 @@
 #Dockerfile for running pycamb notebooks with binder
 #https://mybinder.org/v2/gh/cmbant/camb/master?filepath=docs%2FCAMBdemo.ipynb
 
-FROM cmbant/cosmobox:fbce24adb7457694437fffa34f54bba7ae504213125dc345101dc1488b12b941
+FROM cmbant/cosmobox:gcc9
+
 
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache notebook
